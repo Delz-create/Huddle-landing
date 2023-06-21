@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: #fafcfd;
+}
+
+.hero_header{
+    background-image: url('images/bg-hero-desktop.svg');
+    padding: 1.5em 4.8em;
+}
+section .hero-main-header{
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+#logo{
+    cursor: pointer;
+}
+.btn{
+    background-color: #fff;
+    border: none;
+    padding: .5em 2.5em;
+    border-radius: 12px;
+    box-shadow: 2px 2px 3px 1px #bcd2d8;
+    font-weight: 600;
+    color: #00252e;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    box-shadow: 2px 2px 3px 1px #89b8c5;
+}
+.hero_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5em;
+}
+.hero_img img{
+    height: 450px;
+    cursor: pointer;
+}
+.hero_content .hero_aside h1{
+    color: #00252e;
+    font-size: 2em;
+    word-spacing: 1px;
+    margin-bottom: .8em;
+    font-weight: 600;
+}
+.hero_content .hero_aside p{
+    color: #00252e;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.main_btn{
+    background-color: #f139ae;
+    box-shadow: 1px 1px 5px 1px #9b2770;
+    color: #fff;
+    margin-top: 1em;
+    padding: .7em 2.8em;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 15px;
+}
+.main_btn:hover{
+    background-color: #ee5fba;
+    box-shadow: 1px 1px 5px 1px #ee5fba;
+}
+.promotions{
+    padding: 1.5em 4.8em;
+}
+.promotions .promotions_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #d0dbdf,
+    -1px -1px 3px #d0dbdf;
+    margin-bottom: 18px;
+    margin-top: 25px;
+    padding: 2.5em 2.5em 2.5em 7em;
+}
+.promotions .promotions_img img{
+    height: 250px;
+    cursor: pointer;
+}
+
+.special{
+    float: right;
+}
+.promotions_content .promotions_content-aside h3{
+    color: #00252e;
+    font-weight: 600;
+    margin-bottom: .8em;
+}
+.promotions_content .promotions_content-aside p{
+    color: #00252e;
+    font-weight: 400;
+}
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 1em;    
+    text-align: center;
+    background-color: #fafcfd;
+    border-radius: 8px;
+    padding: 2.5em 3.8em;
+    box-shadow: 1px 1px 2px #d0dbdf,
+    -1px -1px 2px #d0dbdf;
+    display: none;
+}
+.call-to-action h3{
+    padding-bottom: 1.5em;
+}
+footer{
+    background-color: #00252e;
+    margin-top: 8.5em;
+    padding: 1.5em 5em;
+    padding-top: 8em;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_icon h3 img{
+    color: #fff;
+    margin-bottom: 1em;
+}
+footer p{
+    color: #fff;
+    cursor: pointer;
+}
+
+.location p{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+.location p img{
+    padding-right: .5em;
+}
+.tel p{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+.tel p img{
+    padding-right: .5em;
+}
+.mail p{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+.mail p img{
+    padding-right: .5em;
+}
+.footer_content1 p{
+    margin-bottom: 1em;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.socials p{
+    margin: .8em;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+span{
+    color: #fff;
+    font-size: 10px;
+    float: right;
+}
+footer .attribution a{
+    text-decoration: none;
+    color: #fff;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 414px) {
+    .hero_header{
+        padding: .8em 1em;
+    }
+    .hero_content{
+        flex-direction: column;
+        margin-top: 2.5em;
+    }
+    .hero_content .hero_aside {
+        text-align: center;
+    }
+    .hero-main-header{
+        margin-bottom: 3.5em;
+    }
+    .hero_content .hero_aside h1{
+        font-size: 1.5em;
+    }
+    .hero_content .hero_aside p{
+        font-size: .9em;
+    }
+    .hero_content .hero_aside{
+        margin-bottom: 3.5em;
+    }
+    .hero_img img{
+        height: 220px;
+    }
+
+    .promotions{
+        padding: 1.5em 1em;
+    }
+    .promotions .promotions_content{
+        flex-direction: column;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2.5em .5em 2.5em 1em;
+    }
+    .promotions .promotions_img img{
+        height: 150px;
+        cursor: pointer;
+    }
+    
+    .special{
+        float: right;
+    }
+    .promotions_content .promotions_content-aside{
+        margin-bottom: 1.8em;
+    }
+    .promotions_content .promotions_content-aside h3{
+        color: #00252e;
+        font-weight: 600;
+        margin-bottom: .8em;
+    }
+    .promotions_content .promotions_content-aside p{
+        color: #00252e;
+        font-weight: 400;
+    }
+
+    .call-to-action{
+        margin: 0px .8em;
+    }
+    .call-to-action h3{
+        padding-bottom: .8em;
+    }
+
+
+    footer{
+        background-color: #00252e;
+        margin-top: 8.5em;
+        padding: 1.5em 1em;
+        padding-top: 8em;
+    }
+    .footer_content{
+        flex-direction: column;
+    }
+    .location p{
+        font-size: 1.2em;
+    }
+    .location p img{
+        padding-right: .8em;
+    }    
+    .tel p img{
+        padding-right: .8em;
+    }
+    .mail p img{
+        padding-right: .8em;
+    }
+    .mobile-view {
+        margin-bottom: 2.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero_header{
+        padding: 1.5em 2.8em;
+    }
+    .hero_img img{
+        height: 150px;
+    }
+
+    .promotions .promotions_content{
+        padding: 2.5em 2.5em 2.5em 2em;
+    }
+    .promotions .promotions_img img{
+        height: 150px;
+    }
+
+    .call-to-action{
+        margin: 1.5em 10em;
+    }
+    .call-to-action h3{
+        padding-bottom: .8em;
+    }
+
+    footer{
+        background-color: #00252e;
+        margin-top: 8.5em;
+        padding: 5.5em 1.5em 1.5em;
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .hero_img img{
+        height: 220px;
+    }
+}
